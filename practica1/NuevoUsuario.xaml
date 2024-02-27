@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="practica1.NuevoUsuario"
+             Title="NuevoUsuario">
+
+
+    <Grid BackgroundColor="{StaticResource BackgroundColor}">
+
+        <!-- Diseño de fondo -->
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#eaeaea" Offset="0.1" />
+                <GradientStop Color="{StaticResource BackgroundColor}" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        <StackLayout>
+            <!-- Espacio para la imagen -->
+            <Image x:Name="imgFoto" Aspect="AspectFit" HeightRequest="200" />
+
+            <!-- Botón para cargar imagen -->
+            <Button Text="Cargar Imagen" Clicked="Button_Clicked_3" />
+
+            <!-- Nombre -->
+            <Entry Placeholder="Nombre" Keyboard="Text" x:Name="textNombre" />
+
+            <!-- Teléfono -->
+            <Entry Placeholder="Teléfono" Keyboard="Telephone" x:Name="textTelefono" />
+
+            <!-- Email -->
+            <Entry Placeholder="Email" Keyboard="Email" x:Name="textEmail" />
+
+            <!-- Género -->
+            <!-- Género -->
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="chkMasculino" CheckedChanged="chkMasculino_CheckedChanged" />
+                <Label Text="Masculino" />
+                <CheckBox x:Name="chkFemenino" CheckedChanged="chkMasculino_CheckedChanged" />
+                <Label Text="Femenino" />
+            </StackLayout>
+
+
+            <!-- Fecha de Nacimiento -->
+            <DatePicker x:Name="fechaDada" />
+
+            <!-- Contraseña -->
+            <Entry Placeholder="Contraseña" IsPassword="True"  x:Name="textPassword"/>
+
+            <!-- Repetir Contraseña -->
+            <Entry Placeholder="Repetir Contraseña" IsPassword="True" x:Name="textPassword2"/>
+            
+            <!-- Guardar y cancelar -->
+            <Button Text="Guardar" Clicked="Button_Clicked_1" x:Name="btnGuardar"/>
+            <Button Text="Cancelar" Clicked="Button_Clicked_2" x:Name="btnCancelar"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:practica1"
+             x:Class="practica1.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="BackgroundColor">#f5f5f5</Color>
+
+            <!-- Estilos globales para botones -->
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="BlueViolet" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Margin" Value="5" />
+            </Style>
+
+            <!-- Estilos globales para entradas de texto -->
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="#ffffff" />
+                <Setter Property="TextColor" Value="#495057" />
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="PlaceholderColor" Value="Black" />
+            </Style>
+
+            <!-- Estilos globales para etiquetas -->
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#343a40" />
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+
+            <!-- Estilos globales para los CheckBox -->
+            <Style TargetType="CheckBox">
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <!-- Estilos globales para los DatePicker -->
+            <Style TargetType="DatePicker">
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

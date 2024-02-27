@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="practica1.RecuperarContrasena"
+             Title="RecuperarContrasena">
+    
+    <Grid BackgroundColor="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Agrega tus controles aquí, como Entry para el usuario, correo y teléfono -->
+
+        <Label Grid.Row="0" Text="Recuperar Contraseña" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" />
+
+        <!-- Aquí puedes agregar controles adicionales, como Entry para el usuario, correo y teléfono -->
+        <!-- Usuario -->
+
+        <Entry x:Name="Dnombre" Grid.Row="1" Placeholder="Usuario" />
+
+            <!-- Correo -->
+        <Entry x:Name="Dcorreo" Grid.Row="2" Placeholder="Correo electrónico" />
+
+
+
+
+
+        <!-- Botón para enviar la solicitud de recuperación de contraseña -->
+        <Button  Grid.Row="3" Text="Enviar solicitud" Clicked="Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center" />
+    </Grid>
+</ContentPage>

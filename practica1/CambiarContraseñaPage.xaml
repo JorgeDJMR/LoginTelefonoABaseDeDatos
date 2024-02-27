@@ -1,0 +1,12 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="practica1.CambiarContraseñaPage"
+             Title="Cambiar Contraseña">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label Text="Cambiar Contraseña" FontSize="Large" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="NuevaContraseñaEntry" Placeholder="Nueva Contraseña" />
+        <Button Text="Aceptar" Clicked="Button_Clicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>
